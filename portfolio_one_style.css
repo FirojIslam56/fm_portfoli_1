@@ -1,0 +1,508 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+    /* background-image: url(./image/bodyBg-1.jpg); */
+}
+/*---------Global CSS-------*/
+a, a:hover{
+    text-decoration: none;
+}
+
+ul li :not(.resume-details){
+    list-style-type: none;
+}
+main{
+    margin-left: 250px;
+    /* transition: 1s; */
+    padding: 10px;
+}
+main section{
+    padding-bottom: 40px;
+}
+section{ 
+    overflow: hidden;
+}
+.section-title h1{
+    font-size: 35px;
+}
+
+.about-me,
+.skills,
+.resume,
+.certificate,
+.services,
+.contact{
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 30px 20px;
+}
+
+
+
+/*-----x----Global CSS----x---*/
+/**----------header-----------**/
+#header{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    padding: 0 5px;
+    transition: 1s;
+    overflow: auto;  
+    z-index: 1;
+}
+/* #header:hover{
+    background-image: linear-gradient(red,green);
+} */
+#header .profile img{
+    margin: 10px auto;
+    width: 150px;
+    display: block;
+    border: 3px solid gray; 
+}
+#header .profile h1{
+    text-align: center;
+}
+#header .profile h1 a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+#header .nav-menu ul li{
+    list-style-type: none;
+}
+#header .nav-menu .nav-item-active a,
+#header .nav-menu .nav-item-active i{
+    color: blue;
+}
+
+#header .nav-menu li a{
+    font-size: 18px;
+    color: gray;
+    padding: 5px 10px;
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+#header .nav-menu li a span{
+    margin-left: 10px;
+}
+#header .nav-menu li a:hover span{
+    color: white;
+    font-weight: bold;
+}
+#header .nav-menu li a:hover i{
+    color: blue;
+    font-weight: bold;
+}
+#header .social-links{
+    margin: 20px ;
+}
+#header .social-links a{
+    padding: 5px;
+    background-color:  	#202020 ;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 1;
+    margin-right: 5px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+#header .social-links a:hover{
+    background-color: #0066FF ;
+    transform: translateY(-5px);
+}
+/**-----x-----header------x-----**/
+
+/*----------Right Side------------*/
+.right-side{
+    margin-left: 300px; 
+    transition: all 1s; 
+}
+.toggle-button{
+    top: 20px;
+    right: 30px;
+    position: fixed;
+    z-index: 1;
+}
+.toggle-button .menu-cls{
+    display: none;
+    z-index: 1;
+}
+.toggle-button .cross-cls{
+    display: none;
+    z-index: 1;
+}
+.toggle-button i{
+    font-size: 25px;
+    color: DodgerBlue ;
+}
+/*------------my-view--------*/
+.my-view{
+    width: 100%;
+    height: 100vh;
+    background: url('image/myViewImg.jpg') top center;
+    background-size: cover;
+
+}
+.my-view h3{
+    color: rgb(15, 12, 15);
+    font-size: 25px;
+    font-weight: bold;
+}
+.my-view h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+.my-view p{
+    color: rgb(15, 12, 15);
+    font-size: 25px;
+    font-weight: bold;
+}
+.my-view p span{
+    border-bottom: 3px solid blue;
+    color: rgb(252, 15, 212);
+}
+/*===========main===========*/
+/*---------About----------------*/
+.about-me .about-details h2{
+    font-size: 25px;
+}
+/*-----------Skills--------------*/
+.skills .progress{
+    height: 12px;
+    font-size: 10px;
+    border-radius: 0;
+}
+.skills:hover .progress-bar{
+    animation: hoverSkillsAnimate 1s;
+}
+@keyframes hoverSkillsAnimate{
+    from{width: 0;}
+}
+/*-----------Resume-----------*/
+.resume .resume-item h4{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.resume .resume-item .resume-title{
+    font-weight: bold; 
+}
+.resume .resume-item-content{
+    padding: 0 15px;
+    border-left: 2px solid gray;
+}
+.resume .resume-item-content::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid gray;
+    border-radius: 50px;
+    position: absolute;
+    background-color: white;
+    left: 8px;
+}
+/*----------Certificate-----------*/
+.certificate .certificate-nav-items{
+    margin: 0 auto ;
+    list-style: none;
+    text-align: center;
+    background: LightSkyBlue;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+.certificate .certificate-nav-items li{
+    /* background-color: rgb(100, 236, 207); */
+    padding: 3px 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+.certificate .certificate-nav-items li:hover{
+    color: blue;
+    font-weight: bold;
+}
+.certificate .certificate-nav-items li:first-child{
+    /* border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; */
+    padding-left: 15px;
+}
+.certificate .certificate-nav-items li:last-child{
+    /* border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; */
+    padding-right: 15px;
+}
+.certificate .certificate-filter-active{
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+.certificate .certificate-all-items{
+    margin: 30px 0;   
+}
+.certificate .certificate-item{
+    padding: 20px;
+    margin: 0px; 
+}
+.certificate .certificate-wrap{
+    height: 300px;
+    background-color: white;
+    padding: 35px 25px;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.certificate .certificate-item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.certificate .certificate-zoom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.05);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    text-align: center;    
+}
+.certificate .certificate-wrap:hover{
+    background-color: orange;
+    transform: translateY(-15px);
+}
+.certificate .certificate-wrap:hover .certificate-zoom{
+    height: 35px;
+}
+.certificate .certificate-zoom a{
+    color: white;
+    width: 60px;
+    padding: 0 7px 2px 7px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.certificate .certificate-wrap:hover .certificate-zoom a{
+    opacity: 100%;
+    background-color: DeepSkyBlue ;
+}
+
+
+.certificate .certificate-see-more{
+    text-align: center;
+}
+.certificate .certificate-see-more a{
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom right, blue, red);
+    border-radius: 3px;
+    color: white;
+}
+.certificate .certificate-see-more a:hover{
+    background-image: linear-gradient(to bottom right, red, blue);
+}
+
+
+
+
+/*---------Services------------*/
+.services .services-icon{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: rgb(32, 175, 241);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid rgb(19, 94, 233);
+    transition: 0.5s;
+}
+.services .services-icon i{ 
+    font-size: 20px;
+}
+.services .services-content-box:hover .services-icon{
+    color: black;
+    background-color: white;
+}
+.services .services-title a{
+    font-weight: bold;
+    color: black;
+}
+.services .services-title a:hover{
+    color: rgb(32, 175, 241);;
+}
+.services .services-title,
+.services .services-details{
+    margin-left: 60px;
+}
+
+/*--------Contact------------*/
+.contact .contact-left-box,
+.contact .contact-right-box{
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.contact .contact-item{
+    padding: 10px;
+}
+.contact .contact-icon{
+   width: 40px;
+   height: 40px;
+   background-color: #c2e3f8;
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   float: left;
+   border: 1px solid #71afd6;
+   transition: 0.5s;
+}
+.contact .contact-item:hover .contact-icon{
+    background-color: #39acf3;
+}
+.contact .contact-icon i{
+    font-size: 20px;
+    color: blue;
+}
+.contact .contact-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact .contact-title,
+.contact .contact-details{
+    margin-left: 50px;
+}
+/**----------footer---------**/
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+}
+#footer p{
+    padding: 5px;
+}
+/*----------Scroll Top--------------*/
+#scroll-top {
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+#scroll-top:hover{
+    background-color: orange;
+    color: black;
+}
+#scroll-top i{
+    font-size: 25px; 
+}
+
+
+
+
+
+
+
+@media (max-width:900px){
+    #header{
+        left:-250px;
+    }
+    .right-side,main{
+        margin-left: 0px; 
+    }
+    .toggle-button{
+        right: 10px;
+    }
+    .toggle-button .menu-cls{
+        display: block;
+    } 
+    
+}
+@media (max-width:600px) {
+    .my-view{
+        width: 100%;
+        height: 100vh;
+        background: url('image/myViewImg.jpg') right center;
+        background-size: cover;
+    }
+    
+}
+@media (min-width: 900px) {
+    .my-view {
+      background-attachment: fixed;
+    }
+    
+  }
+
+@media (max-width:992px){
+    .my-view{
+        
+        padding-right: 100px;
+    }
+    .my-view h1{
+        font-size: 50px;
+    }
+  }
+@media (max-width:768px){
+    .section-title h1{
+        font-size: 30px;
+    }
+    .my-view{
+        padding-bottom: 60px;
+        padding-right: 120px;
+    }
+    .my-view h1{
+        font-size: 40px;
+    }
+    .about-me .about-details h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:576px){
+    .section-title h1{
+        font-size: 25px;
+    }
+    .my-view{
+        padding-bottom: 90px;
+        padding-right: 90px;
+    }
+    .my-view h1{
+        font-size: 30px;
+    }
+    .my-view h3,.my-view p{
+        font-size: 20px;
+    }
+    .my-view p span{
+        color: whitesmoke;
+    }
+
+}
+
+  

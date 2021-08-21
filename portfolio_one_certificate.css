@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./image/bodyBg-2.jpg);
+    background-attachment: fixed;
+}
+a, a:hover{
+    text-decoration: none;
+}
+/*------------Navigation-------------*/
+.navigation {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    font-size: 20px;
+    transition: 0.7s;
+}
+.sticky {
+    padding: 2px 50px;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 15px;
+    transition: 0.7s;
+}
+.navigation .back-btn {
+    float: left;
+    padding: 2px 3px;
+    background-color: black;
+    border-radius: 50%;
+}
+.navigation .back-btn i{
+    color: white;
+    font-size: 25px;
+}
+.navigation .back-btn i:hover{
+    color: orangered;
+}
+.navigation .navigation-items ul li {
+    padding: 0 10px;
+    cursor: pointer;
+    color: white;
+}
+.navigation .navigation-items ul li:hover {
+    color: orangered;
+    font-weight: bold;
+}
+
+
+
+
+/*-----------Gallery----------------*/
+.certificate-see-more .certificate-all-items {
+    margin: 30px 0;
+    margin-top: 100px;
+}
+
+.certificate-see-more .certificate-item {
+    padding: 20px;
+    margin: 0px;
+}
+
+.certificate-see-more .certificate-wrap {
+    height: 300px;
+    background-color: white;
+    padding: 35px 25px;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.certificate-see-more .certificate-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.certificate-see-more .certificate-zoom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.certificate-see-more .certificate-wrap:hover {
+    background-color: orange;
+    transform: translateY(-15px);
+}
+
+.certificate-see-more .certificate-wrap:hover .certificate-zoom {
+    height: 35px;
+}
+
+.certificate-see-more .certificate-zoom a {
+    color: white;
+    width: 60px;
+    padding: 0 7px 2px 7px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.certificate-see-more .certificate-wrap:hover .certificate-zoom a {
+    opacity: 100%;
+    background-color: DeepSkyBlue;
+}
+
+/*----------Scroll Top--------------*/
+#scroll-top {
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#scroll-top:hover{
+    background-color: orange;
+    color: black;
+}
+#scroll-top i{
+    font-size: 25px; 
+}
